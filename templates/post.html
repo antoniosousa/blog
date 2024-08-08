@@ -1,16 +1,17 @@
 {% extends "home.html" %}
+{% load static %}
 {% block main_content %}
-<header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+<header class="masthead" style="background-image: url({% static 'assets/img/post-bg.jpg' %})">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="post-heading">
-                    <h1>Man must explore, and this is exploration at its greatest</h1>
-                    <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                    <h1>O homem deve explorar, e isso é exploração no seu melhor.</h1>
+                    <h2 class="subheading">Os problemas parecem muito pequenos a 150 milhas de altura</h2>
                     <span class="meta">
-                        Posted by
-                        <a href="#!">Start Bootstrap</a>
-                        on August 24, 2023
+                        Postado por
+                        <a href="#!">Antonio Sousa</a>
+                        em 07 de Agosto de 2024
                     </span>
                 </div>
             </div>
@@ -22,26 +23,27 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-                <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-                <h2 class="section-heading">The Final Frontier</h2>
-                <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                <h2 class="section-heading">Reaching for the Stars</h2>
-                <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+                <p>Nunca em toda a sua história os homens foram capazes de conceber verdadeiramente o mundo como um só: uma única esfera, um globo, com as qualidades de um globo, uma terra redonda em que todas as direções eventualmente se encontram, onde não há centro porque todo ponto, ou nenhum, é o centro — uma terra igual que todos os homens ocupam como iguais. A terra do aviador, se homens livres a fizerem, será verdadeiramente redonda: um globo na prática, não na teoria.</p>
+                <p>A ciência tem dois lados, é claro; seus produtos podem ser usados tanto para o bem quanto para o mal. Mas não há como voltar atrás na ciência. Os primeiros avisos sobre os perigos tecnológicos também vêm da ciência.</p>
+                <p>O mais significativo sobre a viagem lunar não foi que o homem pisou na Lua, mas que eles puseram os olhos na Terra.</p>
+                <p>Um conto chinês conta sobre alguns homens enviados para prejudicar uma jovem que, ao verem sua beleza, tornam-se seus protetores em vez de seus violadores. Foi assim que me senti vendo a Terra pela primeira vez. Eu não pude deixar de amá-la e estimá-la.</p>
+                <p>Para aqueles que viram a Terra do espaço, e para as centenas e talvez milhares mais que verão, a experiência certamente muda sua perspectiva. As coisas que compartilhamos em nosso mundo são muito mais valiosas do que aquelas que nos dividem.</p>
+                <h2 class="section-heading">A Fronteira Final</h2>
+                <p>Não pode haver pensamento de conclusão para 'mirar nas estrelas'. Tanto figurativamente quanto literalmente, é uma tarefa para ocupar gerações. E não importa o quanto de progresso se faça, sempre há o entusiasmo de estar apenas começando.</p>
+                <p>Não pode haver pensamento de conclusão para 'mirar nas estrelas'. Tanto figurativamente quanto literalmente, é uma tarefa para ocupar gerações. E não importa o quanto de progresso se faça, sempre há o entusiasmo de estar apenas começando.</p>
+                <blockquote class="blockquote">Os sonhos de ontem são as esperanças de hoje e a realidade de amanhã. A ciência ainda não dominou a profecia. Nós prevemos demais para o próximo ano e ainda muito pouco para os próximos dez.</blockquote>
+                <p>Os voos espaciais não podem ser interrompidos. Este não é o trabalho de um único homem ou mesmo de um grupo de homens. É um processo histórico que a humanidade está realizando de acordo com as leis naturais do desenvolvimento humano.</p>
+                <h2 class="section-heading">Alcançando as Estrelas</h2>
+                <p>À medida que nos afastávamos mais e mais, a Terra diminuía de tamanho. Finalmente, ela encolheu ao tamanho de uma bola de gude, a mais bela que você pode imaginar. Aquele objeto bonito, quente e vivo parecia tão frágil, tão delicado, que se você tocasse com um dedo, ele se desintegraria e cairia aos pedaços. Ver isso tem que mudar um homem.</p>
+
+                <a href="#!"><img class="img-fluid" src="{%  static 'assets/img/post-sample-image.jpg' %}" alt="..." /></a>
+                <span class="caption text-muted">Ir a lugares e fazer coisas que nunca foram feitas antes – é disso que se trata viver.</span>
+                <p>Espaço, a fronteira final. Estas são as viagens da nave estelar Enterprise. Sua missão de cinco anos: explorar novos mundos estranhos, buscar novas vidas e novas civilizações, ir audaciosamente onde nenhum homem jamais esteve.</p>
+                <p>Enquanto estou aqui nas maravilhas do desconhecido em Hadley, meio que percebo que há uma verdade fundamental em nossa natureza, o homem deve explorar, e esta é a exploração em seu auge.</p>
                 <p>
-                    Placeholder text by
+                    Texto de reserva por
                     <a href="http://spaceipsum.com/">Space Ipsum</a>
-                    &middot; Images by
+                    &middot; Imagens por
                     <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
                 </p>
             </div>
