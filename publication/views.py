@@ -1,8 +1,26 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.contrib.auth.decorators import login_required
 
-# Create your views here.
-def index(request):
-    return render(request, 'index.html')
+from publication.forms import PublicationForm
+from publication.models import Publication
 
-def post(request):
-    return render(request, 'post.html')
+
+def list_view(request):
+    publications = Publication.objects.all()
+    return render(request, 'index.html', {'publications': publications})
+
+@login_required
+def create_view(request):
+    if request.method == 'POST':
+        form = PublicationForm(request.POST)
+        if form.is_valid():
+            publicatin = form.save(commit=False)
+            publicatin.author = request.user
+            publicatin.save()
+            return redirect('publication-list')
+    else:
+        form = PublicationForm()
+    return render(request, 'create_publication.html', {'form': form})
+
+def detail_view(request):
+    ...

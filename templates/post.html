@@ -1,6 +1,6 @@
 {% extends "home.html" %}
 {% load static %}
-{% block main_content %}
+{% block page_header %}
 <header class="masthead" style="background-image: url({% static 'assets/img/post-bg.jpg' %})">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -18,6 +18,8 @@
         </div>
     </div>
 </header>
+{% endblock page_header %}
+{% block main_content %}
 <!-- Post Content-->
 <article class="mb-4">
     <div class="container px-4 px-lg-5">

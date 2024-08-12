@@ -1,11 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-# Create your models here.
-class Author(models.Model):
-    name = models.CharField(
-        'author\'s name',
-        max_length=50
-    )
 
+class Author(AbstractUser):
     class Meta:
         db_table = 'authors'
