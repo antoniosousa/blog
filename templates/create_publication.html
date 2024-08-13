@@ -10,7 +10,7 @@
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <h1>Criar Publicação</h1>
                 <div class="my-5">
-                    <form method='POST'>
+                    <form method='POST' enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form|crispy }}
                         <br />

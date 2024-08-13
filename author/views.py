@@ -8,14 +8,14 @@ def login_view(request):
         form = AuthenticationForm(request, request.POST)
         if form.is_valid():
             login(request, form.get_user())
-            return redirect('index')
+            return redirect('publication-list')
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
 def logout_view(request):
     logout(request)
-    return redirect('index')
+    return redirect('publication-list')
 
 def register_view(request):
     if request.method == 'POST':

@@ -19,6 +19,12 @@ class Publication(models.Model):
         'publication title',
         max_length=100
     )
+    pub_image = models.ImageField(
+        'publication image',
+        upload_to='publications/',
+        blank=False,
+        null=True
+    )
 
     class Meta:
         db_table = 'publications'

@@ -4,22 +4,11 @@
     <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
             <!-- Post preview-->
-            <div class="post-preview">
-                <a href="{% url 'publication-list' %}">
-                    <h2 class="post-title">O homem deve explorar, e isso é exploração no seu melhor.</h2>
-                    <h3 class="post-subtitle">Os problemas parecem muito pequenos a 150 milhas de altura</h3>
-                </a>
-                <p class="post-meta">
-                    Postado por
-                    <a href="#!">Antonio Sousa</a>
-                    em 07 de Agosto de 2024
-                </p>
-            </div>
             {% for publication in publications %}
             <div class="post-preview">
                 <a href="{% url 'publication-detail' publication.id %}">
-                    <h2 class="post-title">{{publication.title}}</h2>
-                    <h3 class="post-subtitle">Os problemas parecem muito pequenos a 150 milhas de altura</h3>
+                    <h2 class="post-title"> {{ publication.pub_title }} </h2>
+                    <h3 class="post-subtitle"> {{ publication.pub_text|truncatewords:10 }} </h3>
                 </a>
                 <p class="post-meta">
                     Postado por

@@ -12,7 +12,7 @@ def list_view(request):
 @login_required
 def create_view(request):
     if request.method == 'POST':
-        form = PublicationForm(request.POST)
+        form = PublicationForm(request.POST, request.FILES)
         if form.is_valid():
             publicatin = form.save(commit=False)
             publicatin.author = request.user
@@ -22,5 +22,6 @@ def create_view(request):
         form = PublicationForm()
     return render(request, 'create_publication.html', {'form': form})
 
-def detail_view(request):
-    ...
+def detail_view(request, id):
+    publication = Publication.objects.filter(id=id).first()
+    return render(request, 'post.html', {'publication': publication})

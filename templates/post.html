@@ -6,12 +6,11 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="post-heading">
-                    <h1>O homem deve explorar, e isso é exploração no seu melhor.</h1>
-                    <h2 class="subheading">Os problemas parecem muito pequenos a 150 milhas de altura</h2>
+                    <h1>{{ publication.pub_title }}</h1>
                     <span class="meta">
                         Postado por
-                        <a href="#!">Antonio Sousa</a>
-                        em 07 de Agosto de 2024
+                        <a href="#!">{{ publication.author }}</a>
+                        em {{publication.date_pub}}
                     </span>
                 </div>
             </div>
@@ -25,29 +24,7 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>Nunca em toda a sua história os homens foram capazes de conceber verdadeiramente o mundo como um só: uma única esfera, um globo, com as qualidades de um globo, uma terra redonda em que todas as direções eventualmente se encontram, onde não há centro porque todo ponto, ou nenhum, é o centro — uma terra igual que todos os homens ocupam como iguais. A terra do aviador, se homens livres a fizerem, será verdadeiramente redonda: um globo na prática, não na teoria.</p>
-                <p>A ciência tem dois lados, é claro; seus produtos podem ser usados tanto para o bem quanto para o mal. Mas não há como voltar atrás na ciência. Os primeiros avisos sobre os perigos tecnológicos também vêm da ciência.</p>
-                <p>O mais significativo sobre a viagem lunar não foi que o homem pisou na Lua, mas que eles puseram os olhos na Terra.</p>
-                <p>Um conto chinês conta sobre alguns homens enviados para prejudicar uma jovem que, ao verem sua beleza, tornam-se seus protetores em vez de seus violadores. Foi assim que me senti vendo a Terra pela primeira vez. Eu não pude deixar de amá-la e estimá-la.</p>
-                <p>Para aqueles que viram a Terra do espaço, e para as centenas e talvez milhares mais que verão, a experiência certamente muda sua perspectiva. As coisas que compartilhamos em nosso mundo são muito mais valiosas do que aquelas que nos dividem.</p>
-                <h2 class="section-heading">A Fronteira Final</h2>
-                <p>Não pode haver pensamento de conclusão para 'mirar nas estrelas'. Tanto figurativamente quanto literalmente, é uma tarefa para ocupar gerações. E não importa o quanto de progresso se faça, sempre há o entusiasmo de estar apenas começando.</p>
-                <p>Não pode haver pensamento de conclusão para 'mirar nas estrelas'. Tanto figurativamente quanto literalmente, é uma tarefa para ocupar gerações. E não importa o quanto de progresso se faça, sempre há o entusiasmo de estar apenas começando.</p>
-                <blockquote class="blockquote">Os sonhos de ontem são as esperanças de hoje e a realidade de amanhã. A ciência ainda não dominou a profecia. Nós prevemos demais para o próximo ano e ainda muito pouco para os próximos dez.</blockquote>
-                <p>Os voos espaciais não podem ser interrompidos. Este não é o trabalho de um único homem ou mesmo de um grupo de homens. É um processo histórico que a humanidade está realizando de acordo com as leis naturais do desenvolvimento humano.</p>
-                <h2 class="section-heading">Alcançando as Estrelas</h2>
-                <p>À medida que nos afastávamos mais e mais, a Terra diminuía de tamanho. Finalmente, ela encolheu ao tamanho de uma bola de gude, a mais bela que você pode imaginar. Aquele objeto bonito, quente e vivo parecia tão frágil, tão delicado, que se você tocasse com um dedo, ele se desintegraria e cairia aos pedaços. Ver isso tem que mudar um homem.</p>
-
-                <a href="#!"><img class="img-fluid" src="{%  static 'assets/img/post-sample-image.jpg' %}" alt="..." /></a>
-                <span class="caption text-muted">Ir a lugares e fazer coisas que nunca foram feitas antes – é disso que se trata viver.</span>
-                <p>Espaço, a fronteira final. Estas são as viagens da nave estelar Enterprise. Sua missão de cinco anos: explorar novos mundos estranhos, buscar novas vidas e novas civilizações, ir audaciosamente onde nenhum homem jamais esteve.</p>
-                <p>Enquanto estou aqui nas maravilhas do desconhecido em Hadley, meio que percebo que há uma verdade fundamental em nossa natureza, o homem deve explorar, e esta é a exploração em seu auge.</p>
-                <p>
-                    Texto de reserva por
-                    <a href="http://spaceipsum.com/">Space Ipsum</a>
-                    &middot; Imagens por
-                    <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                </p>
+                {{publication.pub_text}}
             </div>
         </div>
     </div>

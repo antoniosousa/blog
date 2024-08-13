@@ -26,7 +26,8 @@ urlpatterns = [
     path('about/',  TemplateView.as_view(template_name='about.html'), name='about'),
     path('', include('publication.urls')),
     path('authors/', include('author.urls'))
-] 
+]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
