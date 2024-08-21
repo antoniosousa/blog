@@ -25,7 +25,8 @@ urlpatterns = [
     path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
     path('about/',  TemplateView.as_view(template_name='about.html'), name='about'),
     path('', include('publication.urls')),
-    path('authors/', include('author.urls'))
+    path('authors/', include('author.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG:

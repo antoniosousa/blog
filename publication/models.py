@@ -1,5 +1,6 @@
 from django.db import models
 from author.models import Author
+from tinymce.models import HTMLField
 
 # Create your models here.
 class Publication(models.Model):
@@ -11,10 +12,7 @@ class Publication(models.Model):
         Author,
         on_delete=models.CASCADE
     )
-    pub_text = models.TextField(
-        'publications',
-        max_length=255
-    )
+    pub_text = HTMLField('publications')
     pub_title = models.CharField(
         'publication title',
         max_length=100
